@@ -30,7 +30,7 @@ $('document').ready(function(){
 			$('#play').fadeIn('slow');
 		});
 	});
-	$('#play').click(function(){
+	//$('#play').click(function(){
 		var audio = $('.song')[0];
         audio.play();
         $('#bulb_yellow').addClass('bulb-glow-yellow-after');
