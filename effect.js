@@ -18,7 +18,7 @@ $('document').ready(function(){
 			$('#b99').animate({top:240, left: vw+350},500);
 		});
 
-	$('#turn_on').click(function(){
+	//$('#turn_on').click(function(){
 		$('#bulb_yellow').addClass('bulb-glow-yellow');
 		$('#bulb_red').addClass('bulb-glow-red');
 		$('#bulb_blue').addClass('bulb-glow-blue');
