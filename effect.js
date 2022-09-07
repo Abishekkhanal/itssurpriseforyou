@@ -18,7 +18,7 @@ $('document').ready(function(){
 			$('#b99').animate({top:240, left: vw+350},500);
 		});
 
-	
+	$('#turn_on').click(function(){
 		$('#bulb_yellow').addClass('bulb-glow-yellow');
 		$('#bulb_red').addClass('bulb-glow-red');
 		$('#bulb_blue').addClass('bulb-glow-blue');
@@ -30,7 +30,7 @@ $('document').ready(function(){
 			$('#play').fadeIn('slow');
 		});
 	});
-	
+	$('#play').click(function(){
 		var audio = $('.song')[0];
         audio.play();
         $('#bulb_yellow').addClass('bulb-glow-yellow-after');
@@ -46,7 +46,7 @@ $('document').ready(function(){
 		});
 	});
 
-	
+	$('#bannar_coming').click(function(){
 		$('.bannar').addClass('bannar-come');
 		$(this).fadeOut('slow').delay(6000).promise().done(function(){
 			$('#balloons_flying').fadeIn('slow');
@@ -136,21 +136,21 @@ $('document').ready(function(){
 		});
 	});	
 
-	
+	$('#cake_fadein').click(function(){
 		$('.cake').fadeIn('slow');
 		$(this).fadeOut('slow').delay(2000).promise().done(function(){
 			$('#light_candle').fadeIn('fast');
 		});
 	});
 
-	
+	$('#light_candle').click(function(){
 		$('.fuego').fadeIn('slow');
 		$(this).fadeOut('slow').promise().done(function(){
 			$('#wish_message').fadeIn('slow');
 		});
 	});
 
-	
+	$('#wish_message').click(function(){
 		 vw = $(window).width()/2;
 		$('#b1,#b2,#b3,#b4,#b5,#b6,#b7,#8,#9').stop();
 		$('#b1').attr('id','b11');
@@ -179,7 +179,7 @@ $('document').ready(function(){
 		});
 	});
 	
-	
+	$('#story').click(function(){
 		$(this).fadeOut('slow');
 		$('.cake').fadeOut('fast').promise().done(function(){
 			$('.message').fadeIn('slow');
